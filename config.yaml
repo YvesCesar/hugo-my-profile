@@ -1,0 +1,222 @@
+baseURL: "/"
+languageCode: "en-us"
+title: "Yves Profile"
+theme: hugo-profile
+
+Paginate: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  title: "Yves César"
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  theme:
+    disableThemeToggle: false
+    defaultTheme: "light" # dark
+
+  # font:
+  #   fontSize: 1.5rem # default: 1rem
+  #   fontWeight: 500 # default: 400
+  #   lineHeight: 1 # default: 1.5
+  #   textAlign: right # default: left
+
+  # color preference
+  # color:
+  #   textColor:
+  #   secondaryTextColor:
+  #   backgroundColor:
+  #   secondaryBackgroundColor:
+  #   primaryColor:
+  #   secondaryColor:
+
+  #   darkmode:
+  #     textColor:
+  #     secondaryTextColor:
+  #     backgroundColor:
+  #     secondaryBackgroundColor:
+  #     primaryColor:
+  #     secondaryColor:
+
+  # If you want to customize the menu, you can change it here
+  # navbar:
+  #   align: mx-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+  #   brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+  #   brandName: "Profile" # Brand name for the brand | default is the title variable
+
+  #   menus:
+  #     disableAbout: true
+  #     disableExperience: true
+  #     disableEducation: true
+  #     disableProjects: true
+  #     disableAchievements: true
+  #     disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Yves César."
+    subtitle: "I build things for the web"
+    content: "A computer science enthusiast. My goal is to use technology to evolve my limits in a fun way."
+    image: "/images/myhero.jpg"
+    button:
+      enable: true
+      name: "Resume"
+      url: "/docs/YvesCesarCurriculo.pdf"
+      download: true 
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/YvesCesar
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/yves-amorim-52779918b/
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.jpeg"
+    content: |-
+      I am a software developer with web development expertise. I have a background in computer science, and I have a strong interest in coding. I am currently working as a Web Developer Intern at [Lepidus Tecnologia](https://lepidus.com.br/). 
+
+    skills:
+      enable: true
+      title: "Here are a few technologies I've been working with recently:"
+      items-colum: 3
+      items:
+        - "Tailwind CSS"
+        - "JavaScript"
+        - "Java"
+        - "Node"
+        - "Python"
+        - "Ruby On Rails"
+        - "eXtreme Programming"
+        - "Automation Tests"
+        - "Ansible"
+        - "Docker"
+        - "PHP"
+        - "Pair Programming"
+        - "Shell Script"
+        - "Linux"
+        - "MySQL"
+        - "PostgreSQL"
+
+  # Experience
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - job: "Web Developer Intern"
+        company: "Lepidus Tecnologia"
+        companyUrl: "https://lepidus.com.br/"
+        date: "Nov 2020 - present"
+        featuredLink:
+          enable: true
+          name: "View the project"
+          url: "https://github.com/lepidus"
+        content: "I work in Home Office with plugins implementation to PKP(Public Knowledge Project)"
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    # index: true
+    items:
+      - title: "Bachelor in Computer Science"
+        school:
+          name: "Universidade Paulista, Manaus"
+          url: "https://www.unip.br/"
+        date: "2019 - present"
+        content: |-
+          I build projects during course, for example, an app to application for reporting abuse and adoption of animals, sustainable technologies website, Game...
+      - title: "High School"
+        school:
+          name: "Colégio Amazonense Dom Pedro II"
+          url: "https://facebook.com/CADPII/"
+        date: "2015 - 2017"
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: JavaScript, MySQL, Python, HTML5
+        content: By Curso em Vídeo.
+        url: https://www.cursoemvideo.com/
+      - title: Java Course
+        content: Linux Terminal.
+        url: https://www.cursoemvideo.com/
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    title: My Last Projects
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Students Frequency System
+        content: A frequency register with face recognition.
+        image: /images/projects/face-recognition.png
+        badges:
+          - "Ruby On Rails"
+          - "Python"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/YvesCesar/students_frequency_system
+
+      - title: To-Do List
+        content: A web app to add, edit and remove tasks.
+        image: /images/projects/To-Do-Demo.gif
+        badges:
+          - "Ruby On Rails"
+          - "Tailwind CSS"
+          - "Hotwire"
+          - "Stimulus"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/YvesCesar/To-Do-List
+
+      - title: Semana Dev Superior Bootcamp
+        content: A game survey with React, React Native and Spring Boot.
+        image: /images/projects/SDS-2020.gif
+        featured:
+          name: Demo SDS-2020
+          link: https://sds1-2020-yves.netlify.app/
+        badges:
+          - "Spring Boot"
+          - "React"
+          - "React Native"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/YvesCesar/SDS-2020
+
+  #Contact
+  contact:
+    enable: true
+    #title: "Custom name"
+    content: If you have a question or just want to say hi, I’ll try my best to get back to you!
+    email: yvesamorim73@gmail.com
+    btnName: Mail me
+
+  footer:
+    recentPosts: false
+    socialNetworks:
+      github: https://github.com/YvesCesar
+      linkedin: https://www.linkedin.com/in/yves-amorim-52779918b/
